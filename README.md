@@ -1,2 +1,0 @@
-# aiml
-AIML chatbot

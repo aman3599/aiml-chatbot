@@ -3,8 +3,4 @@
     <pattern> HI </pattern>
     <template> Hello! What is your name? </template>
   </category>
-  <category>
-    <pattern> MY NAME IS * </pattern>
-    <template> Hello <set name="nameUser"> <star/> </set>! How are you? </template>
-  </category>
 </aiml>

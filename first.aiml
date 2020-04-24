@@ -1,6 +1,10 @@
 <aiml version = "1.0.1" encoding = "UTF-8">
   <category>
-    <pattern> * </pattern>
-    <template> Hello! How are you? </template>
+    <pattern> HI </pattern>
+    <template> Hello! What is your name? </template>
+  </category>
+  <category>
+    <pattern> MY NAME IS * </pattern>
+    <template> Hello <set name="nameUser"> <star/> </set>! How are you? </template>
   </category>
 </aiml>

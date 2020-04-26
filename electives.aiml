@@ -1,5 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
-
-
+  <category>
+    <pattern> STUDY </pattern>
+    <template> Do you want me to suggest some electives? </template>
+  </category>
+  <category>
+    <pattern> _ STUDY </pattern>
+    <template> <srai> STUDY </srai> </template>
+  </category>
+  <category>
+    <pattern> STUDY * </pattern>
+    <template> <srai> STUDY </srai> </template>
+  </category>
+  <category>
+    <pattern> _ STUDY * </pattern>
+    <template> <srai> STUDY </srai> </template>
+  </category>
+  <category>
+    <pattern> YES * </pattern>
+    <that> Do you want me to suggest some electives? </that>
+    <template> <srai> ELECTIVES </srai> </template>
+  </category>
+  <category>
+    <pattern> NO * </pattern>
+    <that> Do you want me to suggest some electives? </that>
+    <template> What is the problem? </template>
+  </category>
+  <category>
+    <pattern> ELECTIVES </pattern>
+    <template> Sure. Which domain are you interested in? </template>
+  </category>
+  <category>
+    <pattern> _ ELECTIVES </pattern>
+    <template> <srai> ELECTIVES </srai> </template>
+  </category>
+  <category>
+    <pattern> ELECTIVES * </pattern>
+    <template> <srai> ELECTIVES </srai> </template>
+  </category>
+  <category>
+    <pattern> _ ELECTIVES * </pattern>
+    <template> <srai> ELECTIVES </srai> </template>
+  </category>
+  <category>
+    <pattern> * </pattern>
+    <that> Sure. Which domain are you interested in? </that>
+    <template> Alright. The electives related to <star/> are: </template>
+  </category>
+  <category>
+    <pattern> NO * </pattern>
+    <that> Sure. Which domain are you interested in? </that>
+    <template> Okay no worries. Just tell the name of the faculty you like. </template>
+  </category>
+  <category>
+    <pattern> * </pattern>
+    <that> Okay no worries. Just tell the name of the faculty you like. </that>
+    <template> Here is the list of subjects taken by <star/>: </template>
+  </category>
 </aiml>
